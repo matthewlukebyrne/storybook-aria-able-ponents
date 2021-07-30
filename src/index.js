@@ -5,7 +5,7 @@ import { GlobalStyle } from './utils';
 
 const App = () => (
     <div>
-        <PrimaryButton>Primary</PrimaryButton>
+        <PrimaryButton aria-pressed="true">Hello World</PrimaryButton>
         <SecondaryButton>Secondary</SecondaryButton>
         <TeritaryButton>Teritary</TeritaryButton>
         <GlobalStyle />
