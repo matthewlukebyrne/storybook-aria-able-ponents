@@ -2,7 +2,7 @@
 
 https://storybook.js.org/
 
-Version 5.13.21 (Updated from 6)
+Version 5.13.21 (Updated from Version 6)
 
 ## Available Scripts in Storybook JS
 
