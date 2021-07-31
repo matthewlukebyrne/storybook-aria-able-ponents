@@ -7,7 +7,14 @@ https://storybook.js.org/
 To Setup Storybook with the CLI tool
 
 ### `npx -p @storybook/cli sb init`
-  
+
+To Run Storybook locally on your machine
+
+### `yarn storybook`
+
+To build out your Storybook project into a directory
+
+### `yarn build-storybook`
 
 ___________________________________________________________________________________
 
@@ -55,6 +62,13 @@ Styled Components Modifiers
 Styled Components are incredibly useful when building an application, but the community lacks guidelines and best practices for how to structure, organize, and modify a component library. Fortunately, the CSS ecosystem has several solutions for this, including the very well-thought-out Block, Element, Modifier (BEM) conventions.
 
 https://www.npmjs.com/package/styled-components-modifiers
+
+
+MDX -
+
+MDX is an authorable format that lets you seamlessly write JSX in your Markdown documents. You can import components, such as interactive charts or alerts, and embed them within your content. This makes writing long-form content with components a blast 🚀.
+
+https://mdxjs.com/
 
 
 ### Deployment Strategy for Web Components via Netlify Hosting
