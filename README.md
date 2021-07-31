@@ -45,6 +45,13 @@ https://polished.js.org/
 https://polished.js.org/docs/
 
 
+Styled Components Modifiers
+
+Styled Components are incredibly useful when building an application, but the community lacks guidelines and best practices for how to structure, organize, and modify a component library. Fortunately, the CSS ecosystem has several solutions for this, including the very well-thought-out Block, Element, Modifier (BEM) conventions.
+
+https://www.npmjs.com/package/styled-components-modifiers
+
+
 ### Deployment Strategy for Web Components via Netlify Hosting
 
 An intuitive Git-based workflow and powerful serverless platform to build, deploy, and collaborate on web apps.

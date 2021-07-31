@@ -1,5 +1,7 @@
+// Primary Font for Aria-Able
 export const primaryFont = 'Quicksand, monospace';
 
+// Typescale for elements
 export const typeScale = {
   header1: "1.8rem",
   header2: "1.6rem",
