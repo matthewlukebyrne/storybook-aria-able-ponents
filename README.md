@@ -64,6 +64,13 @@ Styled Components are incredibly useful when building an application, but the co
 https://www.npmjs.com/package/styled-components-modifiers
 
 
+MDX -
+
+MDX is an authorable format that lets you seamlessly write JSX in your Markdown documents. You can import components, such as interactive charts or alerts, and embed them within your content. This makes writing long-form content with components a blast 🚀.
+
+https://mdxjs.com/
+
+
 ### Deployment Strategy for Web Components via Netlify Hosting
 
 An intuitive Git-based workflow and powerful serverless platform to build, deploy, and collaborate on web apps.
