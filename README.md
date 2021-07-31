@@ -4,7 +4,12 @@ https://storybook.js.org/
 
 ## Available Scripts in Storybook JS
 
+To Setup Storybook with the CLI tool
 
+### `npx -p @storybook/cli sb init`
+  
+
+___________________________________________________________________________________
 
 ## Available Scripts in React App from 'create-react-scripts'
 
