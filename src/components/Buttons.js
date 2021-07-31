@@ -15,7 +15,7 @@ import { applyStyleModifiers } from "styled-components-modifiers";
 // By using props I can pass down the modifier information to my styled components area with destructing
 // With the modifers you have opening and closing parentheses which take a parameter that is going to return the below CSS
 
-const BUTTON_MODIFIERS = {
+export const BUTTON_MODIFIERS = {
     small: () => `
     font-size: ${typeScale.helperText};
     padding: 8px;
