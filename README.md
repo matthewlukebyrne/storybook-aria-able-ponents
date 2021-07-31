@@ -1,8 +1,19 @@
-# Getting Started with Create React App
+# Getting Started with Create React App & Storybook JS components library
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://storybook.js.org/
 
-## Available Scripts
+Version 5.13.21 (Updated from Version 6)
+
+## Available Scripts in Storybook JS
+
+### `yarn run storybook`
+
+Runs the app in the development mode.
+Open http://localhost:6006 to view it on your local machine.
+
+### `yarn build-storybook`
+
+## Available Scripts in React App from 'create-react-scripts'
 
 In the project directory, you can run:
 
@@ -24,47 +35,46 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Component Building using a series of tools and processes with information listed below
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Styled Components -
 
-### `yarn eject`
+https://styled-components.com/
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Utilising tagged template literals (a recent addition to JavaScript) and the power of CSS, styled-components allows you to write actual CSS code to style your components. It also removes the mapping between components and styles – using components as a low-level styling construct could not be easier!
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Polished.js - 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+A lightweight toolset for writing styles in JavaScript. ✨
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+https://polished.js.org/
 
-## Learn More
+https://polished.js.org/docs/
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Styled Components Modifiers
 
-### Code Splitting
+Styled Components are incredibly useful when building an application, but the community lacks guidelines and best practices for how to structure, organize, and modify a component library. Fortunately, the CSS ecosystem has several solutions for this, including the very well-thought-out Block, Element, Modifier (BEM) conventions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+https://www.npmjs.com/package/styled-components-modifiers
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+MDX -
 
-### Making a Progressive Web App
+MDX is an authorable format that lets you seamlessly write JSX in your Markdown documents. You can import components, such as interactive charts or alerts, and embed them within your content. This makes writing long-form content with components a blast 🚀.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+https://mdxjs.com/
 
-### Advanced Configuration
+___________________________________________________________________________
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+### Deployment Strategy for Web Components via Netlify Hosting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+An intuitive Git-based workflow and powerful serverless platform to build, deploy, and collaborate on web apps.
 
-### `yarn build` fails to minify
+https://www.netlify.com/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
