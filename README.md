@@ -7,7 +7,14 @@ https://storybook.js.org/
 To Setup Storybook with the CLI tool
 
 ### `npx -p @storybook/cli sb init`
-  
+
+To Run Storybook locally on your machine
+
+### `yarn storybook`
+
+To build out your Storybook project into a directory
+
+### `yarn build-storybook`
 
 ___________________________________________________________________________________
 
