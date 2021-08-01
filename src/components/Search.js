@@ -7,15 +7,12 @@ import styled from 'styled-components';
 // Added typescale for font control
 import { typeScale } from '../utils';
 
-// Import modifiers for more customisation with styled components
-import { applyStyleModifiers } from "styled-components-modifiers";
-
 
 // Allow to modify different types of button combinations
 // By using props I can pass down the modifier information to my styled components area with destructing
 // With the modifers you have opening and closing parentheses which take a parameter that is going to return the below CSS
 
-export const CHECKBOX_MODIFIERS = {
+export const SEARCH_MODIFIERS = {
     small: () => `
     font-size: ${typeScale.helperText};
     padding: 8px;
@@ -99,7 +96,7 @@ export const CHECKBOX_MODIFIERS = {
 
 
 // Creating a default structure of my compoents
-export const Checkbox = styled.div`
+export const Search = styled.form`
     padding: 12px 24px;
     font-size: ${typeScale.paragraph};
     border-radius: 2px;
@@ -107,75 +104,6 @@ export const Checkbox = styled.div`
     cursor: pointer;
     font-family: 'Quicksand', sans-serif;
     transition: background-color 0.2s linear, color 0.2s linear;
-
-    // pseudo selectors
-    &:hover {
-        background-color: ${props => props.theme.primaryHoverColor};
-        color: ${props => props.theme.textColorOnPrimary};
-    }
-
-    &:focus {
-        outline: 3px solid ${props => props.theme.primaryHoverColor};
-        outline-offset: 2px;
-    }
-
-    &:active {
-        background-color: ${props => props.theme.primaryActiveColor};
-        border-color: ${props => props.theme.primaryActiveColor};
-        color: ${props => props.theme.primaryActiveColor};
-    }
-`;
-
-
-// Inheritance from the previous styled element
-export const CheckboxPrimary = styled(Checkbox)`
-    background-color: ${props => props.theme.primaryColor};
-    border: none;
-    color: ${props => props.theme.textColorOnPrimary};
-
-    &:disabled {
-        background-color: ${props => props.theme.disabled};
-        color: ${props => props.theme.textOnDisabled};
-        cursor: not-allowed;
-    }
-
-    // PASSING THE MODIFERS DECLARED ABOVE
-    ${applyStyleModifiers(CHECKBOX_MODIFIERS)}
-`;
-
-
-// Inheritance from the previous styled element
-export const CheckboxSecondary = styled(Checkbox)`
-    background: none;
-    border: 2px solid ${props => props.theme.primaryColor};
-    color: ${props => props.theme.primaryColor};
-
-    &:disabled {
-        background: none;
-        color: ${props => props.theme.disabled};
-        border-color: ${props => props.theme.disabled};
-        cursor: not-allowed;
-    }
-
-    // PASSING THE MODIFERS DECLARED ABOVE
-    ${applyStyleModifiers(CHECKBOX_MODIFIERS)}
-`;
-
-
-// Inheritance from the previous styled element
-export const CheckboxTeritary = styled(Checkbox)`
-    background: none;
-    border: none;
-    color: ${props => props.theme.primaryColor};
-
-    &:disabled {
-        background: none;
-        color: ${props => props.theme.disabled};
-        cursor: not-allowed;
-    }
-
-    // PASSING THE MODIFERS DECLARED ABOVE
-    ${applyStyleModifiers(CHECKBOX_MODIFIERS)}
 `;
 
 

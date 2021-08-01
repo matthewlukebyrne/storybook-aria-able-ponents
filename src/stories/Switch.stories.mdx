@@ -1,0 +1,34 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
+import { withKnobs, boolean } from "@storybook/addon-knobs";
+import { Switch } from "../components/Switch.js";
+
+<Meta title="Switch Component" component={Switch} />
+
+# ARIA: switch role
+
+<Preview withToolbar>
+  <Story name="ARIA: switch role">
+    <Switch onClick={action('button-click')}>
+            <button type="button" role="switch" aria-checked="true" id="speakerPower" class="switch">
+                <span>Off</span>
+                <span>On</span>
+            </button>
+            <label for="speakerPower" class="switch">Speaker Power</label>
+    </Switch>
+  </Story>
+</Preview>
+
+## Usage
+
+The ARIA switch role is functionally identical to the checkbox role, except that instead of representing "checked" and "unchecked" states, which are fairly generic in meaning, the switch role represents the states "on" and "off."
+
+## Description
+
+The ARIA switch role is identical to the checkbox role, except instead of being "checked" or "unchecked", it is either "on" or "off."  
+
+Like the checkbox role, the aria-checked attribute is required. The two possible values are true and false. Unlike a checkbox or role="checkbox", there is no indeterminate or mixed state. 
+
+The switch role does not support the value mixed for the aria-checked attribute; assigning a value of mixed to a switch instead sets the value to false.
+
+Assistive technologies may choose to represent switch widgets with a specialized presentation to reflect the notion of an on/off switch.

@@ -1,0 +1,36 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
+import { withKnobs, boolean } from "@storybook/addon-knobs";
+import { Document } from "../components/Document.js";
+
+<Meta title="Document Component" component={Document} />
+
+# ARIA: document role
+
+<Preview withToolbar>
+  <Story name="ARIA: document role">
+    <Document onClick={action('button-click')}>
+            <div role="dialog">
+                <div id="InfoText" role="document" tabindex="0">
+                <p>Some informational text goes here.</p>
+                </div>
+                <button id="saveChanges" tabindex="0" role="button" aria-pressed="true">Close</button>
+            </div>
+    </Document>
+  </Story>
+</Preview>
+
+## Usage
+
+Generally used in complex composite widgets or applications, the document role can inform assistive technologies to switch context to a reading mode: 
+The document role tells assistive technologies with reading or browse modes to use the document mode to read the content contained within this element.
+
+## Description
+
+By default, web pages are treated as documents; assistive technologies (AT) enter browse or read mode when entering a new web page. This mode can be altered through various roles, including the widget and application roles. The document role brings the AT back into browse or read mode. 
+
+Generally placed within an application role or other interactive widget role, the document role is used to indicate a section of a complex composite widget that an assistive technology user should read using its browse or virtual reading mode, if available.
+
+Because ATs with reading mode default to that mode for all elements except for those with a widget or application role set, document role is only useful for focusable elements within a widget or application that should be read as static rich text. 
+
+Adding role="document" and tabindex="0" to the element containing the text within a widget enables the screen reader user to press the Tab key to place focus on the document element and read the text with the screen reader's reading cursor.
