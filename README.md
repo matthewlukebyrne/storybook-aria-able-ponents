@@ -1,5 +1,9 @@
 # Getting Started with Create React App & Storybook JS components library
 
+![storybook_1](imgBank/snip1.PNG)
+
+![storybook_2](imgBank/snip2.PNG)
+
 https://storybook.js.org/
 
 Version 5.13.21 (Updated from Version 6)
