@@ -2,21 +2,9 @@
 
 https://storybook.js.org/
 
+Version 5.13.21 (Updated from Version 6)
+
 ## Available Scripts in Storybook JS
-
-To Setup Storybook with the CLI tool
-
-### `npx -p @storybook/cli sb init`
-
-To Run Storybook locally on your machine
-
-### `yarn storybook`
-
-To build out your Storybook project into a directory
-
-### `yarn build-storybook`
-
-___________________________________________________________________________________
 
 ## Available Scripts in React App from 'create-react-scripts'
 
@@ -69,7 +57,6 @@ MDX -
 MDX is an authorable format that lets you seamlessly write JSX in your Markdown documents. You can import components, such as interactive charts or alerts, and embed them within your content. This makes writing long-form content with components a blast 🚀.
 
 https://mdxjs.com/
-
 
 ### Deployment Strategy for Web Components via Netlify Hosting
 
