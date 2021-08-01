@@ -1,0 +1,28 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
+import { withKnobs, boolean } from "@storybook/addon-knobs";
+import { Tab } from "../components/Tab.js";
+
+<Meta title="Tab Component" component={Tab} />
+
+# ARIA: tab role
+
+<Preview withToolbar>
+  <Story name="ARIA: tab role">
+    <Tab disabled={boolean("Disabled", false)} onClick={action('button-click')}>
+        <div role="tab" aria-selected="true" aria-controls="tabpanel-id" id="tab-id">Tab label</div>
+    </Tab>
+  </Story>
+</Preview>
+
+## Usage
+
+The ARIA tab role indicates an interactive element inside a tablist that, when activated, displays its associated tabpanel.
+
+## Description
+
+An element with the tab role controls the visibility of an associated element with the tabpanel role. The common user experience pattern is a group of visual tabs above, or to the side of, a content area, and selecting a different tab changes the content and makes the selected tab more prominent than the other tabs.
+
+Elements with the role tab must either be a child of an element with the tablist role, or have their id part of the aria-owns property of a tablist. This combination identifies to assistive technology that the element is part of a group of related elements. Some assistive technology will provide a count of the number of tab role elements inside a tablist, and inform users of which tab they currently have targeted. They should contain the aria-controls property identifying an element with the tabpanel role. When an element with the tabpanel role has focus, or a child of it has focus, that indicates that the connected element with the tab role is the active tab in a tablist.
+
+When working with elements with the tab role, when they are selected or active, they should have their aria-selected attribute set to true, otherwise it should be set to false. When a tab is selected or active, its controlled tabpanel should have its aria-expanded attribute set to true and its hidden attribute set to false, otherwise the reverse.

@@ -3,38 +3,37 @@ import { action } from "@storybook/addon-actions";
 import { withKnobs, boolean } from "@storybook/addon-knobs";
 import { PrimaryButton, SecondaryButton, TeritaryButton } from "../components/Buttons.js";
 
-<Meta title="AA Button Component" component={PrimaryButton} />
+<Meta title="Button Component" component={PrimaryButton} />
 
-# Buttons
+# ARIA: button role
 
-Buttons are used to trigger actions within an application.
+The button role should be used for clickable elements that trigger a response when activated by the user. 
+Adding role="button" will make an element appear as a button control to a screen reader. 
+This role can be used in combination with the aria-pressed attribute to create toggle buttons.
 
-## Usage
+## Description
 
-Buttons are used to trigger internal actions within your web applications.
+The button role identifies an element as a button to screen readers. 
+A button is a widget used to perform actions such as submitting a form, opening a dialog, cancelling an action, or performing a command such as inserting a new record or displaying information.
 
-## Primary Buttons
-
-Primary buttons are used as a call to action and indicate the most important action on a page.
+## Primary
 
 <Preview withToolbar>
   <Story name="primary">
-    <PrimaryButton disabled={boolean("Disabled", false)} onClick={action('button-click')}>Hello World</PrimaryButton>
+    <PrimaryButton disabled={boolean("Disabled", false)} onClick={action('button-click')}>
+      <div id="saveChanges" tabindex="0" role="button" aria-pressed="false">Save</div>
+    </PrimaryButton>
   </Story>
 </Preview>
 
-## Secondary Buttons
-
-Primary buttons are used as a call to action and indicate the most important action on a page.
+## Secondary
 
 <Story name="secondary">
-  <SecondaryButton>Hello World</SecondaryButton>
+  <SecondaryButton>Click Me</SecondaryButton>
 </Story>
 
-## Teritary Button
-
-Primary buttons are used as a call to action and indicate the most important action on a page.
+## Teritary 
 
 <Story name="tertiary">
-  <TeritaryButton>Hello World</TeritaryButton>
+  <TeritaryButton>Click Me</TeritaryButton>
 </Story>

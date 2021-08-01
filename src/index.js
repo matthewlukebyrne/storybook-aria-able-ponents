@@ -37,8 +37,10 @@ const App = () => {
             </button>
 
             {/* Add customisable styling in the testing area */}
-            <div style={{ background: useDarkTheme ? lightTheme.primaryColor : darkTheme.primaryColor, 
-                width: "100vw", height: "100vh", display: "flex", alignItems: "center", justifyContent: "space-around" }}>
+            <div style={{
+                background: useDarkTheme ? lightTheme.primaryColor : darkTheme.primaryColor,
+                width: "100vw", height: "100vh", display: "flex", alignItems: "center", justifyContent: "space-around"
+            }}>
 
                 <PrimaryButton>Primary Button</PrimaryButton>
                 <SecondaryButton>Secondary Button</SecondaryButton>
