@@ -1,4 +1,6 @@
 import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
+import { withKnobs, boolean } from "@storybook/addon-knobs";
 import { PrimaryButton, SecondaryButton, TeritaryButton } from "../components/Buttons.js";
 
 <Meta title="AA Button Component" component={PrimaryButton} />
@@ -17,7 +19,7 @@ Primary buttons are used as a call to action and indicate the most important act
 
 <Preview withToolbar>
   <Story name="primary">
-    <PrimaryButton>Hello world</PrimaryButton>
+    <PrimaryButton disabled={boolean("Disabled", false)} onClick={action('button-click')}>Hello World</PrimaryButton>
   </Story>
 </Preview>
 
@@ -26,7 +28,7 @@ Primary buttons are used as a call to action and indicate the most important act
 Primary buttons are used as a call to action and indicate the most important action on a page.
 
 <Story name="secondary">
-  <SecondaryButton>Hello world</SecondaryButton>
+  <SecondaryButton>Hello World</SecondaryButton>
 </Story>
 
 ## Teritary Button
@@ -34,5 +36,5 @@ Primary buttons are used as a call to action and indicate the most important act
 Primary buttons are used as a call to action and indicate the most important action on a page.
 
 <Story name="tertiary">
-  <TeritaryButton>Hello world</TeritaryButton>
+  <TeritaryButton>Hello World</TeritaryButton>
 </Story>
