@@ -1,0 +1,37 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
+import { withKnobs, boolean } from "@storybook/addon-knobs";
+import { Required } from "../components/Required.js";
+
+<Meta title="Required Component" component={Required} />
+
+# Using the aria-required attribute
+
+<Preview withToolbar>
+  <Story name="Using the aria-required attribute">
+    <Required onClick={action('button-click')}>
+        <form action="post">
+            <label for="firstName">First name:</label>
+            <input id="firstName" type="text" aria-required="true" />
+            <br/>
+            <label for="lastName">Last name:</label>
+            <input id="lastName" type="text" aria-required="true" />
+            <br/>
+            <label for="streetAddress">Street address:</label>
+            <input id="streetAddress" type="text" />
+        </form>
+    </Required>
+  </Story>
+</Preview>
+
+## Usage
+
+The aria-required attribute is used to indicate that user input is required on an element before a form can be submitted. 
+This attribute can be used with any typical HTML form element; it is not limited to elements that have an ARIA role assigned.
+
+## Description
+
+Screen readers should announce the field as required.
+
+Note that this attribute will not automatically change the presentation of the field.
+

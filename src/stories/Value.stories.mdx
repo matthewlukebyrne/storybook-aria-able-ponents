@@ -1,0 +1,42 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
+import { withKnobs, boolean } from "@storybook/addon-knobs";
+import { Value } from "../components/Value.js";
+
+<Meta title="Value Component" component={Value} />
+
+# Using the aria-valuetext attribute
+
+<Preview withToolbar>
+  <Story name="Using the aria-valuetext attribute">
+    <Value>
+        <div 
+            role="slider"
+            aria-valuenow="1"
+            aria-valuemin="1"
+            aria-valuemax="7"
+            aria-valuetext="Sunday">Slider Test
+        </div>
+    </Value>
+  </Story>
+</Preview>
+
+## Usage
+
+The aria-valuetext attribute is used to define the human readable text alternative of aria-valuenow for a range widget such as progressbar, spinbutton or slider.
+
+Authors SHOULD only set the aria-valuetext attribute when the rendered value cannot be accurately represented as a number. 
+
+For example, a slider may have rendered values of small, medium, and large. In this case, the values of aria-valuenow could range from 1 through 3, which indicate the position of each value in the value space, but thearia-valuetext would be one of the strings: small, medium, or large.
+
+## Description
+
+If the aria-valuetext attribute is absent, assistive technologies will rely solely on the aria-valuenow attribute for the current value. 
+
+If aria-valuetext is specified, assistive technologies SHOULD render that value instead of the value of aria-valuenow.
+
+
+aria-valuenow: Defines the current value for a range widget. See related aria-valuetext.
+aria-valuemin: Defines the minimum allowed value for a range widget.
+aria-valuemax: Defines the maximum allowed value for a range widget.
+aria-valuetext: Defines the human readable text alternative of aria-valuenow for a range widget.

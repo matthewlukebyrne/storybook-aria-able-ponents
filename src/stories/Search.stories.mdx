@@ -1,0 +1,34 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
+import { withKnobs, boolean } from "@storybook/addon-knobs";
+import { Search } from "../components/Search.js";
+
+<Meta title="Search Component" component={Search} />
+
+# ARIA: search role
+
+<Preview withToolbar>
+  <Story name="ARIA: search role">
+    <Search>
+        <div role="search" id="contact-info" aria-label="Search information">
+	    <form>
+            <button id="saveChanges" tabindex="0" role="button" aria-pressed="false">Search</button>
+	    </form>
+        </div>
+    </Search>
+  </Story>
+</Preview>
+
+## Usage
+
+The search landmark role is used to identify a section of the page used to search the page, site, or collection of sites.
+
+## Description
+
+Landmarks can be used by assistive technology to quickly identify and navigate to large sections of the document. 
+
+The search role is added to the container element that encompasses the items and objects that, as a whole, combine to create search functionality. 
+
+When a form is a search form, use the search role instead of form. 
+
+If a document includes more than one search, each should have a unique label. While there is a input of type search, there is no HTML element that defines a search landmark.
