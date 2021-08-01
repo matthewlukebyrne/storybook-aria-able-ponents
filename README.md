@@ -6,13 +6,6 @@ Version 5.13.21 (Updated from Version 6)
 
 ## Available Scripts in Storybook JS
 
-### `yarn run storybook`
-
-Runs the app in the development mode.
-Open http://localhost:6006 to view it on your local machine.
-
-### `yarn build-storybook`
-
 ## Available Scripts in React App from 'create-react-scripts'
 
 In the project directory, you can run:
@@ -64,9 +57,6 @@ MDX -
 MDX is an authorable format that lets you seamlessly write JSX in your Markdown documents. You can import components, such as interactive charts or alerts, and embed them within your content. This makes writing long-form content with components a blast 🚀.
 
 https://mdxjs.com/
-
-___________________________________________________________________________
-
 
 ### Deployment Strategy for Web Components via Netlify Hosting
 

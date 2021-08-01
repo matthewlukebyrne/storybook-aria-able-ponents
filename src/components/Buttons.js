@@ -105,7 +105,7 @@ export const Button = styled.button`
     border-radius: 2px;
     min-width: 100px;
     cursor: pointer;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand, Roboto Mono";
     transition: background-color 0.2s linear, color 0.2s linear;
 
     // pseudo selectors
