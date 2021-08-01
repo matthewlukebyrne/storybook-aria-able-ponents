@@ -1,0 +1,29 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
+import { withKnobs, boolean } from "@storybook/addon-knobs";
+import { Alert } from "../components/Alert.js";
+
+<Meta title="Alert Component" component={Alert} />
+
+# ARIA: alert role
+
+<Preview withToolbar>
+  <Story name="ARIA: alert role">
+    <Alert onClick={action('button-click')}>
+        <p role="alert">The alert will trigger when the element becomes visible.</p>
+    </Alert>
+  </Story>
+</Preview>
+
+## Usage
+
+The alert role can be used to tell the user an element has been dynamically updated. Screen readers will instantly start reading out the updated content when the role is added. If the user is expected to close the alert, then the alertdialog role should be used instead.
+## Description
+
+One of the five live region roles, the alert role is used to provide the user with important, and usually time-sensitive, information, and often to tell the user an element has been dynamically updated.
+
+The alert role is added to the node containing an alert message, not the element causing the alert to be triggered. Alerts are assertive live regions. Setting role="alert" is equivalent to setting aria-live="assertive" and aria-atomic="true". They don't receive focus, and therefore focus does not need to be managed and no user interaction should be required.
+The most important thing to know about the alert role is that it is for dynamic content. 
+
+It is perfect for situations such as when a user fills out a form and JavaScript is used to add an error message - the alert would immediately read out the message. It should not be used on HTML where the user hasn't interacted with it. 
+For example, if a page loads with multiple visible alerts scattered throughout, none would be read because they are not dynamically triggered. 

@@ -1,0 +1,32 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
+import { withKnobs, boolean } from "@storybook/addon-knobs";
+import { Textbox } from "../components/Textbox.js";
+
+<Meta title="Textbox Component" component={Textbox} />
+
+# ARIA: textbox role
+
+<Preview withToolbar>
+  <Story name="ARIA: textbox role">
+    <Textbox>
+        <div id="txtboxLabel">Enter your five-digit zipcode</div>
+        <div role="textbox" contenteditable="true" aria-placeholder="5-digit zipcode" aria-labelledby="txtboxLabel"></div>
+        <div id="txtboxMultilineLabel">Enter the tags for the article</div>
+        <div role="textbox" contenteditable="true" aria-multiline="true" aria-labelledby="txtboxMultilineLabel" aria-required="true"></div> 
+    </Textbox>
+  </Story>
+</Preview>
+
+## Usage
+
+The textbox role is used to identify an element that allows the input of free-form text. 
+
+Whenever possible, rather than using this role, use an input element with type="text", for single-line input, or a textarea element for multi-line input.
+
+## Description
+
+When an element has the textbox role, the browser sends an accessible textbox event to assistive technologies, which can then notify the user about it.
+
+The default is a single line input, in which Return or Enter submits the form; in this case, it is preferable to use an HTML input with type="text". 
+To create a multi-line text box which supports line breaks, as in an HTML textarea, set aria-multiline="true". Including the HTML contenteditable attribute ensures the text node is editable.
